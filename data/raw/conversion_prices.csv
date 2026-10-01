@@ -1,0 +1,15 @@
+vehicle_type,price_low_ngn,price_high_ngn,price_kind,provider,date,source_id,notes
+Car (general),300000,600000,Official estimate,Pi-CNG (CEO Oluwagbemi),2023-11,S42,Depends on exchange rate
+Car (general),300000,400000,Official estimate,National Centre for Technology Management,2024-25,S43,
+Car 4-cylinder,1300000,1300000,Published centre quote,MBH Power (Lagos),2024-10,S40,NGN 50000 discount for multiple vehicles
+Car 6-cylinder,1500000,1500000,Published centre quote,MBH Power (Lagos),2024-10,S40,
+Car (by engine and cylinder 35-200L),1000000,1700000,Published centre quote,Autogig (Lagos),2024-10,S40,
+Car (general),750000,2500000,Centre engineer quote,Autogig (Lagos),2024-09,S41,Tripled in ~5 years
+Car 4-cylinder,730000,730000,Published centre quote,BOVAS,2024-10,S20,Optional extra tank NGN 450000
+Car 6-cylinder,900000,900000,Published centre quote,BOVAS,2024-10,S20,
+Car (market),1000000,2000000,Market report,Prime Business Africa,2024-25,S43,
+Small car / SUV,500000,1500000,Expert estimate,ICIR,2024-10,S17,
+Tricycle (keke),100000,200000,Official estimate,National Centre for Technology Management,2024-25,S43,
+Tricycle (keke),650000,650000,Driver-reported (Abuja),Nairametrics,2026-09,S04,Single anecdote
+Commercial vehicle via NURTW/RTEAN,0,0,Government programme,Pi-CNG,2024-09,S39;S40,Free kits; first 50 per centre in Sep 2024 drive; check 2026 status
+Ride-hailing car,,,Government programme (50% discount),Pi-CNG,2024-09,S41;S17,Half of centre price

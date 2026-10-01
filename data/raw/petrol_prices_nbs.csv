@@ -1,0 +1,16 @@
+month,national_avg_ngn_per_litre,lagos_ngn_per_litre,source_id,notes
+2024-06,750.17,,S30,Year-earlier comparison quoted in Jun 2025 release
+2024-11,1214.17,,S31,Year-earlier comparison quoted in Nov 2025 release
+2024-12,1189.12,,S32,Year-earlier comparison quoted in Dec 2025 release
+2025-02,1245.80,,S14,Year-earlier comparison quoted in Feb 2026 release
+2025-04,1239.33,,S15,Year-earlier comparison quoted in Apr 2026 release
+2025-05,1027.76,,S16,Year-earlier comparison quoted in May 2026 release
+2025-06,1037.66,1100.29,S30,
+2025-10,1052.31,,S31,Month-earlier comparison quoted in Nov 2025 release
+2025-11,1061.35,1021.14,S31,
+2025-12,1048.63,,S32,
+2026-01,1034.76,,S14,
+2026-02,1051.47,966.61,S14,Lagos lowest state
+2026-03,1288.54,,S15,
+2026-04,1532.93,,S15,
+2026-05,1596.25,,S16,Latest NBS release found (published 24 Jun 2026); Edo highest 1722.91; Adamawa lowest 1469.83

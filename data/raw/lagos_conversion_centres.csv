@@ -1,0 +1,7 @@
+centre_id,name,address,area,approved_by_picng,source_ids,sources_count,notes
+C01,Femadec,"Km 42, Lekki-Epe Expressway, Majek Second Gate Stop, Abijo, Ibeju-Lekki",Ibeju-Lekki,Yes,S39;S46,2,
+C02,Portland,"No. 1, Ojota Interchange Terminal, Bayo Shodipo, Ojota",Kosofe,Yes,S39;S46,2,Also operates CNG mother station (L11)
+C03,Mezovest,"Km 23, Lekki-Epe Expressway, Ajah (opposite Kilimanjaro)",Eti-Osa,Yes,S39;S46,2,
+C04,Dana Motors,"117 Oshodi-Apapa Expressway, Isolo",Oshodi-Isolo,Yes,S39;S46,2,
+C05,MBH Power,"Km 5, Ikotun Road, Itamope, Ikorodu",Ikorodu,Yes,S39;S46;S40,3,Published prices in conversion_prices.csv
+C06,Autogig,"Plot 144b Gbagada Expressway, Gbagada",Kosofe,Yes,S39;S46;S40;S41,4,Published prices in conversion_prices.csv
