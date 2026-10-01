@@ -1,6 +1,6 @@
 # Reading 3: Pakistan, the CNG boom and collapse [S23–S26]
 
-## 5-line summary
+## Summary
 
 1. Pakistan introduced CNG in 1992. Cheap, regulated gas prices drove rapid adoption, and by 2011 it was the world's largest CNG user, with 2.5m vehicles, 3,329 stations and about 21% of vehicles converted (S23).
 2. Demand outgrew domestic gas production. From 2008 the government stopped issuing new station licences (S24).
@@ -16,4 +16,4 @@
 
 ## Caution
 
-Some figures in the Arab News articles (national station counts) look mis-stated, so we use those articles only for the supply-cut mechanism. The OGRA report itself should be read to confirm the numbers.
+Some figures in the Arab News articles (national station counts) look mis-stated, so those articles are cited only for the supply-cut mechanism. The OGRA report itself has not yet been reviewed.

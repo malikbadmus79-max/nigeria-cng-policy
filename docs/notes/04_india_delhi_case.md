@@ -1,6 +1,6 @@
 # Reading 4: India, Delhi's CNG mandate [S27–S29]
 
-## 5-line summary
+## Summary
 
 1. On 28 July 1998, India's Supreme Court ordered Delhi's buses, taxis and auto-rickshaws to run on CNG; the April 2001 deadline was extended into 2002.
 2. The rollout hit Nigeria's exact problem: 87 stations could not meet demand, supply fell 32% short, and queues blocked roads (S27).

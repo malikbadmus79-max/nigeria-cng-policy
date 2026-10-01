@@ -1,4 +1,4 @@
-# Model Inputs (v0.2)
+# Model Inputs
 
 Data file: `data/raw/model_inputs.csv` · Petrol series: `data/raw/petrol_prices_nbs.csv` · As of 1 Oct 2026
 
@@ -33,9 +33,9 @@ So the fuel saving share is roughly **1 − (CNG price ÷ petrol price)**:
 | Current reported prices | 318 | 1,400 | 77% |
 | Best (cheapest CNG, May 2026 peak petrol) | 230 | 1,596 | 86% |
 
-The fuel saving is large in every scenario. That makes the project's question sharper: if CNG saves 60–86% on fuel, **why is uptake so slow?** The queue-time and upfront-cost costs are where the answer likely lies.
+The fuel saving is large in every scenario, which sharpens the research question: if CNG cuts fuel costs by 60–86%, **why is uptake slow?** Queue time and upfront conversion cost are the explanations the model tests.
 
-## The model we'll build in week 3 (preview)
+## Cost model structure
 
 Daily net benefit of CNG for a driver:
 
@@ -46,14 +46,14 @@ loan cost per day    = conversion cost repayment (incl. interest) ÷ working day
 net benefit per day  = fuel saving − queue cost − loan cost
 ```
 
-**Break-even queue time** = the queue hours at which net benefit hits zero. This is the project's headline number.
+**Break-even queue time** = the queue hours at which net benefit hits zero. This is the study's headline metric.
 
-## Gaps the Lagos survey must fill
+## Data gaps addressed by the driver survey
 
 1. Distance driven per day (keke, danfo, ride-hailing)
 2. Net earnings per hour (after owner remittance, commission)
 3. Refuels per day for CNG vehicles, and actual queue times at Lagos stations
 4. Danfo fuel use (km/L)
-5. Whether the free (commercial) and 50% (ride-hailing) conversion subsidies still apply in 2026 (ask in survey; also in FOI request)
+5. Whether the free (commercial) and 50% (ride-hailing) conversion subsidies still apply in 2026
 
-Lagos conversion prices are now filled from published centre quotes (`conversion_prices.csv`), so phone calls are no longer needed.
+Lagos conversion prices are drawn from published centre quotes (`conversion_prices.csv`).

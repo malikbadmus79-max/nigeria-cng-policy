@@ -1,6 +1,6 @@
 # Source Log
 
-Last updated: 1 October 2026 · Entries: 46
+Last updated: 1 October 2026 · Entries: 44
 
 Every figure used in the analysis must trace to an ID below.
 
@@ -10,10 +10,10 @@ Every figure used in the analysis must trace to an ID below.
 
 | ID | Title | Organisation | Date | URL | Key figure / claim | Rel. | Notes |
 |----|-------|--------------|------|-----|--------------------|------|-------|
-| S01 | Impact & Results (2026 Term Report) | Pi-CNG & EV | Jan 2026 | https://pci.gov.ng/impact.html | 120,000+ vehicles converted; 93,845 kits deployed; 90 stations; 28 states; 7,700 technicians | M | Self-reported. Vehicles ≠ kits (see conflicts log C1) |
+| S01 | Impact & Results (2026 Term Report) | Pi-CNG & EV | Jan 2026 | https://pci.gov.ng/impact.html | 120,000+ vehicles converted; 93,845 kits deployed; 90 stations; 28 states; 7,700 technicians | M | Self-reported. Vehicles ≠ kits (conflict C1) |
 | S02 | From Plans to Progress: The State of the Presidential CNG Initiative | NESG (Omakoji, Aliyu, Wikina) | Dec 2025 | https://app.nesgroup.org/download_resource_documents/Final_%20From%20Plans%20to%20Progress%20The%20State%20of%20the%20Presidential%20CNG%20Initiative%20in%20Nigeria_1764945608.pdf | 50,000+ vehicles mid-2025; avg queue est. 1.5 hrs; conversion ₦300k–600k (govt) vs ₦1.2m–1.5m before 50% subsidy; CNG ~₦200/scm | M | Best independent overview. Notes data cannot be verified publicly |
-| S03 | Nigerians spend N58tr on fuel in 3yrs as CNG adoption stalls at 12% | The Guardian (Nigeria) | 2026 | https://guardian.ng/?p=2908818 | ₦58.6tn petrol spend since May 2023; H1 2026 avg ₦1,300.33/L | M | "12%" has no stated source; appears to be 120k ÷ 1m target (C2) |
-| S04 | CNG conversion drive faces hurdles over financing, safety and operational bottlenecks | Nairametrics | 20 Sep 2026 | https://nairametrics.com/2026/09/20/nigerias-cng-conversion-drive-faces-hurdles-over-financing-safety-and-operational-bottlenecks/ | Abuja ~10 stations; 4–6 hr queues; conversion ₦325k–650k | L | Driver anecdotes; useful for survey design |
+| S03 | Nigerians spend N58tr on fuel in 3yrs as CNG adoption stalls at 12% | The Guardian (Nigeria) | 2026 | https://guardian.ng/?p=2908818 | ₦58.6tn petrol spend since May 2023; H1 2026 avg ₦1,300.33/L | M | "12%" has no stated source; appears to be 120k ÷ 1m target (conflict C2) |
+| S04 | CNG conversion drive faces hurdles over financing, safety and operational bottlenecks | Nairametrics | 20 Sep 2026 | https://nairametrics.com/2026/09/20/nigerias-cng-conversion-drive-faces-hurdles-over-financing-safety-and-operational-bottlenecks/ | Abuja ~10 stations; 4–6 hr queues; conversion ₦325k–650k | L | Driver anecdotes |
 | S05 | CNG cylinder explosion fears slowing adoption – Pi-CNG/EV CEO | Nairametrics | 9 Sep 2026 | https://nairametrics.com/2026/09/09/cng-cylinder-explosion-fears-slowing-adoption-in-nigeria-pi-cng-ev-ceo/ | ₦5,200–6,000/100km CNG vs ₦19,500–23,400 petrol; conversion ~₦1.5m | M | Official benchmark; method not given (C4) |
 | S06 | Gaps in standards, enforcement threaten Nigeria's CNG transition, SON warns | The Guardian (Nigeria) | 30 Jul 2026 | https://guardian.ng/?p=2888204 | Weak enforcement; few cylinder test facilities; Benin–Auchi explosion tied to uncertified cylinder & breach of NNG 1214:2024 | M | Regulator's own statement |
 | S07 | Evaluating Nigeria's Presidential CNG Initiative Two Years On | BusinessMonitor | 24 Dec 2025 | https://businessmonitor.ng/2025/12/24/evaluating-nigerias-presidential-compressed-natural-gas-cng-initiative-two-years-on/ | ~100,000 vehicles; goal 1m by 2027; incentives by executive order | L | Secondary summary |
@@ -23,7 +23,7 @@ Every figure used in the analysis must trace to an ID below.
 | S11 | Transport cost pain bites despite Tinubu's Oct 1 promise | BusinessDay | 1 Oct 2026 | https://businessday.ng/news/article/transport-cost-pain-bites-despite-tinubus-oct-1-promise | CNG ₦318/scm; petrol ~₦1,400/L; 90 stations in 23 states; Lagos fares ₦800–1,500 | M | Most current prices. "₦70,330 daily saving" looks implausible (C5) |
 | S12 | CNG retail price increases by N150 per SCM in Lagos, Abuja | TheCable | 3 Sep 2025 | https://www.thecable.ng/cng-retail-price-increases-by-n150-per-scm-in-lagos-abuja/ | ₦230 → ₦380/scm overnight, no explanation | M | Price-shock evidence |
 | S13 | Filling stations announce new CNG pump prices closer to petrol cost | Legit.ng | 2 Sep 2025 | https://www.legit.ng/business-economy/energy/1672203-filling-stations-increase-cng-fuel-prices-nigerians-switch/ | CNG ₦230–500+/scm by station; Bolt drivers "up to 10 hours in queues" | L | Upper-bound queue anecdote |
-| S17 | What is the state of Tinubu's CNG conversion initiative? | ICIR | 2 Oct 2024 | https://www.icirnigeria.org/explainer-what-is-the-state-of-tinubus-cng-conversion-initiative/ | Free kits for commercial vehicles via associations; 50% off for e-hailing/private; ₦500k (small car) – ₦1.5m (SUV) | M | Check if still active in 2026 |
+| S17 | What is the state of Tinubu's CNG conversion initiative? | ICIR | 2 Oct 2024 | https://www.icirnigeria.org/explainer-what-is-the-state-of-tinubus-cng-conversion-initiative/ | Free kits for commercial vehicles via associations; 50% off for e-hailing/private; ₦500k (small car) – ₦1.5m (SUV) | M | 2026 status unverified |
 | S18 | Nigeria launches N10 billion credit scheme for CNG vehicle conversions | BusinessDay | 16 Oct 2024 | https://businessday.ng/business-economy/article/nigeria-launches-n10-billion-credit-scheme-for-cng-vehicle-conversions/ | MOFI/CREDICORP; 15–20% interest; 1–3 yr tenor; ₦2.5bn seed | M | Financing inputs |
 | S22 | The safety of using CNG: a growing concern after Benin explosion | Prime Business Africa | Oct 2024 | https://www.primebusiness.africa/?p=184951 | Refuelling explosion, Benin City, 16–17 Oct 2024; cylinder welded/modified | M | No deaths reported |
 
@@ -31,7 +31,7 @@ Every figure used in the analysis must trace to an ID below.
 
 | ID | Title | Organisation | Date | URL | Key figure / claim | Rel. | Notes |
 |----|-------|--------------|------|-----|--------------------|------|-------|
-| S14 | Petrol pump price N1,051.47 per litre in February – NBS | Gazette NGR (citing NBS) | Mar 2026 | https://gazettengr.com/?p=457722 | Feb 2026 national avg ₦1,051.47; Lagos ₦966.61 (lowest state) | H | NBS PMS Price Watch; get original PDF |
+| S14 | Petrol pump price N1,051.47 per litre in February – NBS | Gazette NGR (citing NBS) | Mar 2026 | https://gazettengr.com/?p=457722 | Feb 2026 national avg ₦1,051.47; Lagos ₦966.61 (lowest state) | H | NBS PMS Price Watch; original PDF not yet obtained |
 | S15 | Average petrol price hits ₦1,532 per litre | Channels TV (citing NBS) | 30 May 2026 | https://www.channelstv.com/2026/05/30/average-petrol-price-hits-%E2%82%A61532-per-litre/ | Apr 2026 ₦1,532.93; Mar 2026 ₦1,288.54 | H | Sharp spring 2026 rise |
 | S16 | Petrol prices rise by 55% to N1,596/litre in May – NBS | Tribune | 24 Jun 2026 | https://tribuneonlineng.com/petrol-prices-rise-by-55-to-n1596-litre-in-may-nbs/ | May 2026 ₦1,596.25 (+55% y/y) | H | Latest NBS month found |
 | S19 | Lagos NURTW launches ₦10.2bn CNG tricycles | TechEconomy | 16 Oct 2024 | https://techeconomy.ng/lagos-nurtw-launches-10-2b-cng-tricycles-to-curb-rising-transport-expenses | 3,000 CNG keke; daily fuel ₦15,000 (petrol) → ₦2,500–3,000 (CNG); one station at Agidingbi | L | Union claim at 2024 prices |
@@ -43,14 +43,14 @@ Every figure used in the analysis must trace to an ID below.
 | ID | Title | Organisation | Date | URL | Key figure / claim | Rel. | Notes |
 |----|-------|--------------|------|-----|--------------------|------|-------|
 | S23 | Pakistan largest CNG user | Dawn | 2 Jun 2011 | https://www.dawn.com/news/633775 | 2.5m CNG vehicles; 3,329 stations; 21% of vehicles (Economic Survey 2010–11) | M | Peak-era baseline |
-| S24 | Pakistan sees 83pc decline in CNG use since 2012, OGRA report shows | The Nation | 10 Jun 2026 | https://www.nation.com.pk/10-Jun-2026/pakistan-sees-83pc-decline-cng-use-since-2012-ogra-report-shows | 325 MMCFD (FY12) → 55 MMCFD (FY25); ban on new station licences Feb 2008 | M | Regulator data via press; get OGRA report |
-| S25 | 'Longest' supply cut to CNG stations in Pakistan may jeopardize 20,000 jobs | Arab News | 1 Dec 2021 | https://www.arabnews.pk/node/1978991/pakistan | All Sindh & Balochistan stations cut 1 Dec 2021–15 Feb 2022 to serve households | M | National station counts in article unclear; don't use |
-| S26 | Shortfall forces closure of CNG stations in Punjab, Islamabad | Arab News | Dec 2018 | https://www.arabnews.com/business/shortfall-forces-closure-of-cng-stations-in-punjab-islamabad-1427811 | Winter shortfall 700–800 MMCFD; gas diverted to homes | M | Station counts look mis-stated; use mechanism only |
+| S24 | Pakistan sees 83pc decline in CNG use since 2012, OGRA report shows | The Nation | 10 Jun 2026 | https://www.nation.com.pk/10-Jun-2026/pakistan-sees-83pc-decline-cng-use-since-2012-ogra-report-shows | 325 MMCFD (FY12) → 55 MMCFD (FY25); ban on new station licences Feb 2008 | M | Regulator data via press; OGRA report not yet reviewed |
+| S25 | 'Longest' supply cut to CNG stations in Pakistan may jeopardize 20,000 jobs | Arab News | 1 Dec 2021 | https://www.arabnews.pk/node/1978991/pakistan | All Sindh & Balochistan stations cut 1 Dec 2021–15 Feb 2022 to serve households | M | National station counts in article unclear; not used |
+| S26 | Shortfall forces closure of CNG stations in Punjab, Islamabad | Arab News | Dec 2018 | https://www.arabnews.com/business/shortfall-forces-closure-of-cng-stations-in-punjab-islamabad-1427811 | Winter shortfall 700–800 MMCFD; gas diverted to homes | M | Station counts look mis-stated; cited for mechanism only |
 | S27 | CNG in Delhi: implementation problems (Transport Asia workshop paper) | Singh, Sharma, Sharma & Bhan, CRRI | c. 2001 | https://groups.seas.harvard.edu/TransportAsia/workshop_papers/Singhetal.pdf | SC order 28 Jul 1998; 42,756 converted; 87 stations; 32% supply deficit; queues | H | Real-time account of the crisis |
 | S28 | Gas requirements of Delhi will be met | Press Information Bureau, Govt of India | 13 Jul 2003 | https://archive.pib.gov.in/release02/lyr2003/rjul2003/13072003/r130720031.html | 80,000 CNG vehicles; stations 30 → 112; allocation 0.48 → 2 MMSCMD | H | Shows the supply fix |
 | S29 | The Impact of Delhi's CNG Program on Air Quality | Narain & Krupnick, Resources for the Future | 2007 | https://www.rff.org/publications/working-papers/the-impact-of-delhi039s-cng-program-on-air-quality/ | Bus conversion cut PM10, CO, SO2; auto conversion less effective | H | Outcome evidence |
 
-## Lagos stations, conversion prices and petrol series (added in desk tasks)
+## Lagos stations, conversion prices and petrol series
 
 | ID | Title | Organisation | Date | URL | Key figure / claim | Rel. | Notes |
 |----|-------|--------------|------|-----|--------------------|------|-------|
@@ -68,11 +68,9 @@ Every figure used in the analysis must trace to an ID below.
 | S41 | "₦5000 gas can take me from Lagos to Ibadan": drivers move to CNG | TechCabal | 27 Sep 2024 | https://techcabal.com/2024/09/27/rising-fuel-costs-push-early-cng-adoption/ | Autogig ₦750k–2.5m; 50% discount for ride-hailing; CNG ₦235/scm | M | |
 | S42 | Conversion of petrol vehicles to CNG to cost N600,000 – FG | Daily Trust | 14 Nov 2023 | https://dailytrust.com/conversion-of-petrol-vehicles-to-cng-to-cost-n600000-fg/ | Official ₦300k–600k | M | Early official estimate |
 | S43 | Between fuel price burden and CNG conversion cost: the dilemma of Nigerians | Prime Business Africa | 2024–25 | https://www.primebusiness.africa/?p=190735 | NCTM: cars ₦300k–400k, keke ₦100k–200k; market ₦1m–2m | M | |
-| S44 | How to make a Freedom of Information request in Nigeria | LawPàdí | n.d. | https://lawpadi.com/how-to-make-a-freedom-of-information-request-in-nigeria/ | 7-day response (+7 extension); court review within 30 days | M | For FOI letter |
-| S45 | Pi-CNG & EV homepage | Pi-CNG & EV | 2026 | https://pci.gov.ng/ | Official name; Executive Chairman Ismaeel Ahmed; coordinated via CRDCU, Office of the SA to the President on Policy & Coordination | M | For FOI addressee |
 | S46 | FG offers free CNG conversion for vehicles at six locations in Lagos | Kola King (newsletter) | Sep 2024 | https://kolaking.substack.com/p/fg-offers-free-cng-conversion-for | Same 6 centres and terms as S39 | L | Cross-check only |
 
-## To add next (not yet read)
+## Not yet reviewed
 
 - NBS PMS Price Watch original PDFs (Jan 2023 – latest), for a full monthly series
 - OGRA State of the Regulated Petroleum Industry report (Pakistan)
