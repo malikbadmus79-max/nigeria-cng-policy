@@ -55,5 +55,6 @@ net benefit per day  = fuel saving − queue cost − loan cost
 3. Refuels per day for CNG vehicles, and actual queue times at Lagos stations
 4. Danfo fuel use (km/L)
 5. Whether the free (commercial) and 50% (ride-hailing) conversion subsidies still apply in 2026
+6. Days worked per year (currently assumed 312 = 6 days × 52 weeks, `working_days_per_year` in `model_inputs.csv`; used to spread loan repayments over working days)
 
 Lagos conversion prices are drawn from published centre quotes (`conversion_prices.csv`).
