@@ -14,6 +14,7 @@ conversion_cost_after_subsidy,NGN,commercial (via association),0,,,S17,Low,Free 
 conversion_subsidy_share,percent,e-hailing/private,,50,,S17;S02,Low,50% discount reported 2024-25; 2026 status unverified
 loan_interest_rate,percent per year,all,15,17.5,20,S18,Medium,MOFI/CREDICORP CALM scheme
 loan_tenor,years,all,1,2,3,S18,Medium,
+working_days_per_year,days,all,312,312,312,,Assumption,6 days x 52 weeks; to be checked against survey question on days worked
 keke_daily_fuel_cost_petrol,NGN per day,keke,,15000,,S19,Low,2024 prices (petrol ~1000/L); requires rescaling to current prices
 keke_daily_fuel_cost_cng,NGN per day,keke,2500,2750,3000,S19,Low,Union claim at 2024 prices
 ridehail_daily_gross,NGN per day,car,36000,48000,60000,S21,Low,Small sample; pre-2026

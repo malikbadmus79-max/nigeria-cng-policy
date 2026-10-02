@@ -21,6 +21,13 @@ import pandas as pd
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
 
+# Confidence labels for rows that are allowed to have no source_ids:
+#   "Gap"        - a survey item with no value yet
+#   "Assumption" - a working value we chose ourselves (e.g. 312 working days),
+#                  to be checked against survey data
+# A set, so adding another placeholder label later is a one-word change.
+PLACEHOLDER_CONFIDENCE = {"Gap", "Assumption"}
+
 
 def read_csv_safe(path: pathlib.Path) -> pd.DataFrame:
     """
@@ -62,20 +69,22 @@ def load_all_csvs(raw_dir: pathlib.Path) -> dict[str, pd.DataFrame]:
 def audit_model_inputs(df: pd.DataFrame) -> list[dict]:
     """
     Return a list of rows in model_inputs.csv that are missing a source_id
-    but whose confidence is NOT 'Gap'.
+    but whose confidence is NOT a placeholder label ('Gap' or 'Assumption').
 
     The project rule (docs/sources.md / CLAUDE.md) is:
       - Every number must trace to a source.
       - Rows marked confidence='Gap' are intentional survey placeholders —
         they have no published source yet, so we skip them.
+      - Rows marked confidence='Assumption' are values we chose ourselves and
+        say so openly; they are listed in the report, not flagged as errors.
       - Everything else must have a non-empty source_ids value.
     """
     problems = []
     for _, row in df.iterrows():
-        is_gap = str(row["confidence"]).strip() == "Gap"
+        is_placeholder = str(row["confidence"]).strip() in PLACEHOLDER_CONFIDENCE
         has_source = str(row["source_ids"]).strip() != ""
 
-        if not is_gap and not has_source:
+        if not is_placeholder and not has_source:
             problems.append({
                 "parameter": row["parameter"],
                 "vehicle":   row["vehicle"],
@@ -103,18 +112,22 @@ def main():
     model_df = frames["model_inputs"]
 
     # ---------------------------------------------------------------------------
-    # 3. Count total input rows, then separate intentional gaps from sourced rows.
-    #    "Gap" rows are expected — they flag survey items we still need to collect.
-    #    Every non-Gap row must have a source_ids entry.
+    # 3. Count total input rows, then separate placeholders from sourced rows.
+    #    "Gap" rows flag survey items we still need to collect; "Assumption"
+    #    rows are working values we chose. Every other row must have a
+    #    source_ids entry.
     # ---------------------------------------------------------------------------
-    total_rows     = len(model_df)
-    gap_rows       = model_df[model_df["confidence"] == "Gap"]
-    sourced_rows   = model_df[model_df["confidence"] != "Gap"]
-    problems       = audit_model_inputs(model_df)
+    total_rows      = len(model_df)
+    confidence      = model_df["confidence"].str.strip()
+    gap_rows        = model_df[confidence == "Gap"]
+    assumption_rows = model_df[confidence == "Assumption"]
+    sourced_rows    = model_df[~confidence.isin(PLACEHOLDER_CONFIDENCE)]
+    problems        = audit_model_inputs(model_df)
 
     print(f"\n  Total input rows   : {total_rows}")
     print(f"  Sourced rows       : {len(sourced_rows)}")
     print(f"  Intentional gaps   : {len(gap_rows)}  (confidence == 'Gap')")
+    print(f"  Assumptions        : {len(assumption_rows)}  (confidence == 'Assumption')")
 
     # ---------------------------------------------------------------------------
     # 4. List the intentional Gap rows so the user knows what still needs
@@ -125,16 +138,24 @@ def main():
         print(f"    {row['parameter']:<40s}  vehicle={row['vehicle']:<8s}  notes={row['notes']}")
 
     # ---------------------------------------------------------------------------
-    # 5. Flag any non-Gap rows that are ALSO missing a source — these are
+    # 5. List the Assumption rows, so unsourced working values stay visible
+    #    every time the audit runs instead of being silently accepted.
+    # ---------------------------------------------------------------------------
+    print("\nAssumption rows (our own working values — check against survey):")
+    for _, row in assumption_rows.iterrows():
+        print(f"    {row['parameter']:<40s}  vehicle={row['vehicle']:<8s}  notes={row['notes']}")
+
+    # ---------------------------------------------------------------------------
+    # 6. Flag any other rows that are ALSO missing a source — these are
     #    genuine data-quality issues that need to be fixed before modelling.
     # ---------------------------------------------------------------------------
     print()
     if problems:
-        print(f"WARNING: {len(problems)} non-Gap row(s) are missing source_ids:")
+        print(f"WARNING: {len(problems)} row(s) are missing source_ids:")
         for p in problems:
             print(f"    parameter={p['parameter']:<40s}  vehicle={p['vehicle']:<8s}  confidence={p['confidence']}")
     else:
-        print("OK: all non-Gap rows have at least one source_id.")
+        print("OK: every row except Gap/Assumption placeholders has at least one source_id.")
 
     print()
 
