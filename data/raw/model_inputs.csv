@@ -5,11 +5,12 @@ cng_price,NGN per scm,car/bus,230,318,380,S13;S11;S10,Medium,"230 = NNPC station
 cng_price,NGN per scm,heavy,,450,,S10;S12,Medium,Official heavy-duty rate
 petrol_efficiency,km per litre,car,9,10,11,S20,Low,Single source; average car; varies 8-20 by vehicle; to be validated with survey data
 cng_efficiency,km per scm,car,,10.67,,S20,Low,Single source; implies roughly 1 scm ~ 1 litre petrol on distance; official cost benchmark implies ~6-7 km per unit for both fuels (see conflicts C4)
+efficiency_ratio,ratio,all,1.0,1.0,1.0,S20;S05,Low,1 scm about equal to 1 litre on distance (C4); car data applied to keke
 benchmark_running_cost_cng,NGN per 100km,car,5200,5600,6000,S05;S11,Medium,Official benchmark; validation check, not a model input
 benchmark_running_cost_petrol,NGN per 100km,car,19500,21450,23400,S05;S11,Medium,Official benchmark; validation check, not a model input
 cng_tank_range,km per fill,car,,200,,S20,Low,17 scm tank in 4-cylinder car
 conversion_cost,NGN,car,300000,1300000,1700000,S42;S40;S41,Medium,Low = official estimate (2023); mid/high = published Lagos centre quotes (MBH Power 1.3m; Autogig up to 1.7m; extreme 2.5m); see conversion_prices.csv
-conversion_cost,NGN,keke,100000,,650000,S43;S04,Low,Official estimate 100-200k vs one reported 650k; free for association members under Pi-CNG drive
+conversion_cost,NGN,keke,100000,375000,650000,S43;S04,Low,mid = midpoint of 100k-650k range; official estimates proved too low for cars (C10)
 conversion_cost_after_subsidy,NGN,commercial (via association),0,,,S17,Low,Free kits for commercial vehicles in 2024; 2026 status unverified
 conversion_subsidy_share,percent,e-hailing/private,,50,,S17;S02,Low,50% discount reported 2024-25; 2026 status unverified
 loan_interest_rate,percent per year,all,15,17.5,20,S18,Medium,MOFI/CREDICORP CALM scheme
@@ -19,8 +20,10 @@ keke_daily_fuel_cost_petrol,NGN per day,keke,,15000,,S19,Low,2024 prices (petrol
 keke_daily_fuel_cost_cng,NGN per day,keke,2500,2750,3000,S19,Low,Union claim at 2024 prices
 ridehail_daily_gross,NGN per day,car,36000,48000,60000,S21,Low,Small sample; pre-2026
 ridehail_daily_fuel_petrol,NGN per day,car,,20000,,S21,Low,Pre-2026 prices
+petrol_price_at_spend_reports,NGN per litre,all,1000,1000,1000,S19;S21,Assumption,approximate petrol price when daily spend figures were reported (2024-25)
 ridehail_commission,percent,car,25,27.5,30,S21,Medium,Uber/Bolt; InDrive ~10%
 queue_time_per_refuel,hours,all,1.5,4,6,S02;S04,Medium,1.5 = NESG estimate; 4-6 = Abuja reports 2026; extreme case 10 hrs (S13)
+refuels_per_day,count,all,1,1,1,,Assumption,survey item
 daily_distance,km per day,keke,,,,,Gap,Survey item
 daily_distance,km per day,danfo,,,,,Gap,Survey item
 daily_distance,km per day,car,,,,,Gap,Survey item
