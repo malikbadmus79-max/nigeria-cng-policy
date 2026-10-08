@@ -16,6 +16,10 @@ Prepared for Pi-CNG & EV, the Lagos State Ministry of Transportation, the Nigeri
 
 The Presidential Initiative on Compressed Natural Gas and Electric Vehicles (Pi-CNG & EV) aims to convert 1 million vehicles by 2027. Its case rests on the rise in petrol prices since the subsidy was removed in May 2023. The national average pump price rose from ₦750.17 per litre in June 2024 to ₦1,596.25 in May 2026. For commercial drivers, fuel price rises bear directly on daily income and fares. The programme reports more than 120,000 conversions, about 12% of that target, and has deployed 93,845 kits. On fuel price alone, switching is attractive: CNG costs 61–86% less than petrol across the price scenarios tested. Adoption has nonetheless been slow. An independent review by the Nigerian Economic Summit Group (NESG) identified thin refuelling infrastructure, high upfront cost and uneven access as the main constraints. In Lagos, the refuelling network is thin. Of 22 named CNG sites, only 6 are confirmed operational by two sources: four fixed stations and two mobile units. Another 12 have been commissioned but are not confirmed to be selling gas, and 4 planned mobile units have no confirmed opening. Alimosho, Ikorodu, Badagry, Ibeju-Lekki and Lagos Island have no confirmed site.
 
+![Map of 22 named CNG sites in Lagos; 6 confirmed operational by two sources](../outputs/figures/png/station_map.png)
+
+Positions are approximate (area-level geocoding). Interactive map: https://malikbadmus79-max.github.io/nigeria-cng-policy/outputs/figures/lagos_station_map.html.
+
 ## What the evidence shows
 
 ### Queue time decides whether conversion pays
