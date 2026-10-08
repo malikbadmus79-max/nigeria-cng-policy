@@ -10,7 +10,7 @@ Data file: `data/raw/model_inputs.csv` · Petrol series: `data/raw/petrol_prices
 | CNG price (₦/scm, cars) | 230 | 318 | 380 | Medium |
 | Conversion cost (₦, car) | 300,000 | 1,300,000 | 1,700,000 | Medium |
 | Conversion cost (₦, keke) | 100,000 | — | 650,000 | Low |
-| Lagos CNG stations (count) | 7 confirmed | 18 | 22 named | Low |
+| Lagos CNG stations (count) | 6 confirmed | 18 | 22 named | Low |
 | Loan interest (% / yr) | 15 | 17.5 | 20 | Medium |
 | Queue time per refuel (hrs) | 1.5 | 4 | 6 | Medium |
 | Distance driven per day (km) | — | — | — | **Gap: survey** |

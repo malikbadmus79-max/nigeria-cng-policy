@@ -12,7 +12,7 @@ for Nigerian commercial drivers, and which policy levers restore the incentive?
 4. Policy options appraisal + costed recommendations
 
 ## Rules
-- Never modify files in data/raw/
+- Never modify source exports in data/raw/ (survey_responses.csv, petrol_prices_nbs.csv, lagos_cng_stations.csv, lagos_conversion_centres.csv, conversion_prices.csv). model_inputs.csv is a curated parameter table: it may be edited, but every change must keep a source ID or an Assumption label in its row and be described in the commit message.
 - Every figure/number must trace to docs/sources.md
 - Explain code choices — I'm learning, not just shipping
 - Python, pandas, plotly; keep code readable and commented

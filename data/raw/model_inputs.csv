@@ -6,8 +6,8 @@ cng_price,NGN per scm,heavy,,450,,S10;S12,Medium,Official heavy-duty rate
 petrol_efficiency,km per litre,car,9,10,11,S20,Low,Single source; average car; varies 8-20 by vehicle; to be validated with survey data
 cng_efficiency,km per scm,car,,10.67,,S20,Low,Single source; implies roughly 1 scm ~ 1 litre petrol on distance; official cost benchmark implies ~6-7 km per unit for both fuels (see conflicts C4)
 efficiency_ratio,ratio,all,1.0,1.0,1.0,S20;S05,Low,1 scm about equal to 1 litre on distance (C4); car data applied to keke
-benchmark_running_cost_cng,NGN per 100km,car,5200,5600,6000,S05;S11,Medium,Official benchmark; validation check, not a model input
-benchmark_running_cost_petrol,NGN per 100km,car,19500,21450,23400,S05;S11,Medium,Official benchmark; validation check, not a model input
+benchmark_running_cost_cng,NGN per 100km,car,5200,5600,6000,S05;S11,Medium,"Official benchmark; validation check, not a model input"
+benchmark_running_cost_petrol,NGN per 100km,car,19500,21450,23400,S05;S11,Medium,"Official benchmark; validation check, not a model input"
 cng_tank_range,km per fill,car,,200,,S20,Low,17 scm tank in 4-cylinder car
 conversion_cost,NGN,car,300000,1300000,1700000,S42;S40;S41,Medium,Low = official estimate (2023); mid/high = published Lagos centre quotes (MBH Power 1.3m; Autogig up to 1.7m; extreme 2.5m); see conversion_prices.csv
 conversion_cost,NGN,keke,100000,375000,650000,S43;S04,Low,mid = midpoint of 100k-650k range; official estimates proved too low for cars (C10)
@@ -30,4 +30,4 @@ daily_distance,km per day,car,,,,,Gap,Survey item
 danfo_fuel_use,km per litre,danfo,,,,,Gap,No published source; survey item
 keke_daily_earnings,NGN per day,keke,,,,,Gap,No reliable published source; survey item
 stations_national,count,all,,90,,S01;S11,Medium,23 vs 28 states disputed
-stations_lagos,count,all,7,18,22,S34;S35;S36;S37,Low,7 = confirmed operational (2 sources); 22 = all named in lagos_cng_stations.csv incl. planned; IOGC network claims 15
+stations_lagos,count,all,6,18,22,S34;S35;S36;S37,Low,"6 = confirmed operational from 2 sources (4 fixed stations, 2 mobile units); 22 = all named in lagos_cng_stations.csv incl. planned; IOGC network claims 15"
