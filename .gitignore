@@ -220,3 +220,7 @@ __marimo__/
 # Private working docs, intentionally kept out of this repo
 docs/foi_request_picng.md
 docs/project_plan.md
+
+# Raw survey export (submission timestamps); only the anonymised
+# data/processed/survey_clean.csv is published
+data/raw/survey_responses.csv

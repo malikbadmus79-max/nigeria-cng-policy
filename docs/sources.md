@@ -1,6 +1,6 @@
 # Source Log
 
-Last updated: 1 October 2026 · Entries: 44
+Last updated: 8 October 2026 · Entries: 45
 
 Every figure used in the analysis must trace to an ID below.
 
@@ -69,6 +69,12 @@ Every figure used in the analysis must trace to an ID below.
 | S42 | Conversion of petrol vehicles to CNG to cost N600,000 – FG | Daily Trust | 14 Nov 2023 | https://dailytrust.com/conversion-of-petrol-vehicles-to-cng-to-cost-n600000-fg/ | Official ₦300k–600k | M | Early official estimate |
 | S43 | Between fuel price burden and CNG conversion cost: the dilemma of Nigerians | Prime Business Africa | 2024–25 | https://www.primebusiness.africa/?p=190735 | NCTM: cars ₦300k–400k, keke ₦100k–200k; market ₦1m–2m | M | |
 | S46 | FG offers free CNG conversion for vehicles at six locations in Lagos | Kola King (newsletter) | Sep 2024 | https://kolaking.substack.com/p/fg-offers-free-cng-conversion-for | Same 6 centres and terms as S39 | L | Cross-check only |
+
+## Primary data
+
+| ID | Title | Organisation | Date | URL | Key figure / claim | Rel. | Notes |
+|----|-------|--------------|------|-----|--------------------|------|-------|
+| S47 | Lagos commercial driver survey | The researcher | Oct 2026 | None (primary data) | n=25 (12 petrol, 13 CNG); median fuel saving 81.7% (n=13); median daily queue 2.25 hours (n=13) | M | Small non-random sample; 15 interviewer-administered |
 
 ## Not yet reviewed
 
