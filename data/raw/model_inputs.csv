@@ -31,3 +31,7 @@ danfo_fuel_use,km per litre,danfo,,,,,Gap,No published source; survey item
 keke_daily_earnings,NGN per day,keke,,,,,Gap,No reliable published source; survey item
 stations_national,count,all,,90,,S01;S11,Medium,23 vs 28 states disputed
 stations_lagos,count,all,6,18,22,S34;S35;S36;S37,Low,"6 = confirmed operational from 2 sources (4 fixed stations, 2 mobile units); 22 = all named in lagos_cng_stations.csv incl. planned; IOGC network claims 15"
+net_earnings_per_hour,NGN per hour,all,6792,9308,13019,S47,Medium,"n=20 unflagged (13 CNG, 7 petrol); 25th/50th/75th percentile of (gross - fuel spend) / hours; before owner remittance or app commission; survey, 25 drivers, Oct 2026"
+daily_queue_hours_survey,hours,all,1.5,2.25,3,S47,Medium,"n=13 unflagged CNG users; 25th/50th/75th percentile; band midpoints x refuels per day; survey, 25 drivers, Oct 2026"
+refuels_per_day_survey,count,all,2,2,2,S47,Medium,"n=13 unflagged CNG users; 25th/50th/75th percentile; survey, 25 drivers, Oct 2026"
+working_days_survey,days per year,all,312,364,364,S47,Medium,"n=20 unflagged (13 CNG, 7 petrol); 25th/50th/75th percentile of days per week x 52; survey, 25 drivers, Oct 2026"

@@ -16,6 +16,21 @@ Data file: `data/raw/model_inputs.csv` · Petrol series: `data/raw/petrol_prices
 | Distance driven per day (km) | — | — | — | **Gap: survey** |
 | Keke / danfo daily earnings (₦) | — | — | — | **Gap: survey** |
 
+## Survey-based inputs (S47)
+
+From the Lagos driver survey (`docs/survey_method.md`), unflagged rows only. Low / mid / high are the 25th percentile,
+median and 75th percentile.
+
+| Input | Low | Mid | High | n | Confidence |
+|---|---|---|---|---|---|
+| Net earnings per hour (₦), gross − fuel spend ÷ hours | 6,792 | 9,308 | 13,019 | 20 (13 CNG, 7 petrol) | Medium |
+| Daily queue hours (CNG users) | 1.5 | 2.25 | 3 | 13 | Medium |
+| Refuels per day (CNG users) | 2 | 2 | 2 | 13 | Medium |
+| Working days per year (days per week × 52) | 312 | 364 | 364 | 20 | Medium |
+
+Earnings are before owner remittance or app commission, which the survey did not ask about, so take-home pay per
+hour is lower. Small, non-random sample: see the limitations in `docs/survey_method.md`.
+
 ## A key calibration finding
 
 Two independent sources imply that **1 scm of CNG takes a car roughly as far as 1 litre of petrol**:
