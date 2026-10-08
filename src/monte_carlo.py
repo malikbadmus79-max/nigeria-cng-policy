@@ -89,7 +89,8 @@ def triangular(rng: np.random.Generator, row: dict, size: int) -> np.ndarray:
 # ---------------------------------------------------------------------------
 # The simulation
 # ---------------------------------------------------------------------------
-def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fixed=None):
+def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fixed=None,
+                   queue_multiplier=1.0, queue_cap=None, fixed_interest=None, fixed_cng_price=None):
     """
     Run the Monte Carlo and return one row per draw.
 
@@ -99,6 +100,15 @@ def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fix
         conversion:        "market" (repay a loan for the kit) or "free" (loan cost 0)
         queue_hours_fixed: if given, every draw uses this daily queue time instead
                            of sampling one (used for the "what if queues were X hours" runs)
+        queue_multiplier:  multiply every draw's daily queue time by this (0.5 = queues halved)
+        queue_cap:         if given, no draw's daily queue time exceeds this many hours
+        fixed_interest:    if given, every loan uses this annual rate as a decimal (0.05 = 5%)
+        fixed_cng_price:   if given, every draw uses this CNG price (NGN/scm)
+
+    The four policy parameters default to "no change", so leaving them out
+    gives exactly the same result as before they existed. Each one overrides a
+    value AFTER it has been drawn, so the random sequence is unchanged and a
+    policy run differs from the baseline only in the input the policy touches.
 
     Returns:
         DataFrame with the sampled inputs, fuel_saving, queue_cost, loan_cost and
@@ -124,6 +134,8 @@ def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fix
     # 1. Prices
     petrol_price = triangular(rng, get_row(inputs, "petrol_price_national", "all"), n_draws)
     cng_price = triangular(rng, get_row(inputs, "cng_price", "car/bus"), n_draws)
+    if fixed_cng_price is not None:
+        cng_price = np.full(n_draws, float(fixed_cng_price))
 
     # 2. Bootstrap a driver: rng.integers picks a row number for each draw.
     sample = drivers.iloc[rng.integers(0, len(drivers), size=n_draws)].reset_index(drop=True)
@@ -132,6 +144,9 @@ def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fix
     daily_queue = rng.choice(queue_pool, size=n_draws, replace=True)
     if queue_hours_fixed is not None:
         daily_queue = np.full(n_draws, float(queue_hours_fixed))
+    daily_queue = daily_queue * queue_multiplier
+    if queue_cap is not None:
+        daily_queue = np.minimum(daily_queue, queue_cap)   # element by element: the smaller of the two
 
     # 4. Loan terms: always drawn (keeps the random sequence identical across
     #    options), then switched off for "free".
@@ -148,6 +163,8 @@ def run_simulation(n_draws=10_000, seed=42, conversion="market", queue_hours_fix
     interest = triangular(rng, get_row(inputs, "loan_interest_rate", "all"), n_draws) / 100  # CSV is in percent
     tenor = triangular(rng, get_row(inputs, "loan_tenor", "all"), n_draws)
     tenor = np.round(tenor * 12) / 12   # whole months, as a real loan would be
+    if fixed_interest is not None:
+        interest = np.full(n_draws, float(fixed_interest))
 
     # --- Model ---------------------------------------------------------------
     # Same litres per day as when surveyed, so spend scales with the petrol price.

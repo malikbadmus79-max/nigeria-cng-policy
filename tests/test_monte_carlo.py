@@ -83,3 +83,48 @@ def test_market_and_free_share_every_draw_except_the_loan():
 def test_fixed_queue_hours_override():
     r = run_simulation(n_draws=N, queue_hours_fixed=2)
     assert (r["daily_queue_hours"] == 2).all()
+
+
+# ---------------------------------------------------------------------------
+# Policy parameters (used by src/policy_options.py)
+# ---------------------------------------------------------------------------
+def test_policy_parameter_defaults_change_nothing():
+    plain = run_simulation(n_draws=N, seed=11)
+    explicit = run_simulation(n_draws=N, seed=11, queue_multiplier=1.0, queue_cap=None,
+                              fixed_interest=None, fixed_cng_price=None)
+    pd.testing.assert_frame_equal(plain, explicit)
+
+
+def test_queue_multiplier_scales_every_draw():
+    base = run_simulation(n_draws=N, seed=11)
+    halved = run_simulation(n_draws=N, seed=11, queue_multiplier=0.5)
+    np.testing.assert_allclose(halved["daily_queue_hours"], base["daily_queue_hours"] * 0.5)
+
+
+def test_queue_cap_limits_only_long_queues():
+    base = run_simulation(n_draws=N, seed=11)
+    capped = run_simulation(n_draws=N, seed=11, queue_cap=1.0)
+    assert capped["daily_queue_hours"].max() <= 1.0
+    # Draws already under the cap are untouched; longer ones become exactly 1.
+    np.testing.assert_allclose(capped["daily_queue_hours"], np.minimum(base["daily_queue_hours"], 1.0))
+
+
+def test_fixed_interest_applies_to_every_loan_and_cuts_repayments():
+    base = run_simulation(n_draws=N, seed=11)
+    cheap = run_simulation(n_draws=N, seed=11, fixed_interest=0.05)
+    assert (cheap["interest_rate"] == 0.05).all()
+    # Base rates are 15-20%, so every repayment must be lower at 5%.
+    assert (cheap["loan_cost"] < base["loan_cost"]).all()
+
+
+def test_fixed_cng_price_applies_to_every_draw():
+    r = run_simulation(n_draws=N, seed=11, fixed_cng_price=318)
+    assert (r["cng_price"] == 318).all()
+
+
+def test_policy_runs_keep_the_other_draws_identical():
+    # A policy should change only what it touches: same drivers and petrol prices.
+    base = run_simulation(n_draws=N, seed=11)
+    policy = run_simulation(n_draws=N, seed=11, queue_cap=1.0, fixed_interest=0.05, fixed_cng_price=318)
+    for col in ["respondent_id", "petrol_price", "conversion_cost", "tenor_years"]:
+        pd.testing.assert_series_equal(base[col], policy[col])
